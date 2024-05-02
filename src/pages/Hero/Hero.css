@@ -1,0 +1,40 @@
+.hero-portion {
+  min-height: 100vh;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  width: fit-content;
+  margin: auto;
+}
+
+.hero-title p, h2 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.hero-title p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: goldenrod;
+  font-weight: 500;
+}
+
+#dash {
+  width: 50px;
+  border: 2px solid goldenrod;
+}
+
+.hero-title h1 {
+  font-size: 3.8rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.hero-title h2 {
+  font-weight: 300;
+}

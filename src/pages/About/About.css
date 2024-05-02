@@ -1,0 +1,36 @@
+.about_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.About_portion {
+  background-color: rgba(128, 128, 128, 0.5);
+  border: 3px solid whitesmoke;
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 30px;
+}
+
+.about_paragraph {
+  text-transform: capitalize;
+}
+
+.about_heading {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+
+.about_subheading {
+  color: rgb(32, 218, 218);
+  font-family: "Roboto Slab", serif;
+}
+
+.change_color {
+  color: goldenrod;
+}
+
+.subheading_title {
+  font-size: 1.1rem;
+}

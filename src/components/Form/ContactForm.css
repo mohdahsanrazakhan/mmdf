@@ -1,0 +1,26 @@
+.contact-form p {
+  margin: 0 0 12px 0;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.input-fields label {
+  margin: 8px 0 0 0;
+}
+
+.input-fields input, .input-fields textarea {
+  padding: 10px 8px;
+}
+
+.submit-btn {
+  background-color: #346dfe;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 0 0;
+}
