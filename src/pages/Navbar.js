@@ -115,14 +115,14 @@ function Navbar({ mode, toggleColorMode }) {
                     Services
                   </Typography>
                 </MenuItem>
-                <MenuItem
-                  onClick={() => scrollToSection("calculators")}
-                  sx={{ py: "6px", px: "12px" }}
-                >
-                  <Typography variant="body2" color="f0f8ff">
-                    Calculators
-                  </Typography>
-                </MenuItem>
+                  <MenuItem
+                    onClick={() => scrollToSection("calculators")}
+                    sx={{ py: "6px", px: "12px" }}
+                  >
+                    <Typography variant="body2" color="f0f8ff">
+                      Calculators
+                    </Typography>
+                  </MenuItem>
                 <MenuItem
                   onClick={() => scrollToSection("testimonials")}
                   sx={{ py: "6px", px: "12px" }}

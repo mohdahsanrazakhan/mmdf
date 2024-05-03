@@ -1,5 +1,9 @@
 .header {
   text-align: center;
+  color: whitesmoke;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  margin: 0 0 2rem 0;
 }
 
 .debt-calc-container {

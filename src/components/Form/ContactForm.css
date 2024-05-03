@@ -1,5 +1,21 @@
+.contact-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  color: aliceblue;
+}
+
+.contact-form h2 {
+  color: aliceblue;
+}
+
+.change_color {
+  color: goldenrod;
+}
+
 .contact-form p {
   margin: 0 0 12px 0;
+  color: aliceblue; 
 }
 
 .input-fields {
@@ -9,6 +25,7 @@
 }
 
 .input-fields label {
+  color: aliceblue;
   margin: 8px 0 0 0;
 }
 
@@ -17,10 +34,18 @@
 }
 
 .submit-btn {
-  background-color: #346dfe;
-  color: #ffffff;
+  background-color: goldenrod;
+  color: #000;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
   margin: 10px 0 0;
+}
+
+.submit-btn:hover {
+  background-color: #dcbc6f;
+}
+
+.submit-btn:active {
+  background-color: gold;
 }

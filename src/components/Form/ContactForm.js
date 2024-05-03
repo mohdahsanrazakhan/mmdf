@@ -25,6 +25,7 @@ function ContactForm() {
 
   return (
     <div className='contact-form'>
+      <h1 className='contact-heading'><span className='change_color'>Contact</span> us</h1>
       <h2>Let's talk!</h2>
       <p>Go ahead and send us a brief of your requirements!</p>
       <form ref={form} onSubmit={sendEmail}>

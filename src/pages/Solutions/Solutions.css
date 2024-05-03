@@ -5,6 +5,14 @@
   min-height: 100vh;
 }
 
+.solution_heading {
+  color: aliceblue;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  margin: 0 0 2rem 0;
+}
+
 @media only screen and (max-width: 768px) {
   .card_grid {
     grid-template-columns: repeat(2, 1fr);

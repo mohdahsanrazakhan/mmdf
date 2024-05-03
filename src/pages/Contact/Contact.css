@@ -1,6 +1,8 @@
 .contact-us {
   display: flex;
   gap: 50px;
+  min-height: 100vh;
+  margin: 3rem 0;
 }
 
 .contact-us div {
@@ -12,7 +14,8 @@
 }
 
 .image-container {
-  height: 100vh;
+  height: 80vh;
+  margin: auto;
 }
 
 .image-container img {

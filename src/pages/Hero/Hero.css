@@ -38,3 +38,26 @@
 .hero-title h2 {
   font-weight: 300;
 }
+
+.hero-portion {
+  position: relative;
+}
+
+.hero-portion .icons-container {
+  position: absolute;
+  left: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-portion .icons-container {
+    left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero-portion .icons-container {
+    display: none;
+  }
+}

@@ -1,22 +1,17 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './pages/Navbar';
-import Hero from './pages/Hero/Hero';
-import About from './pages/About/About';
-import Solutions from './pages/Solutions/Solutions';
-import Contact from './pages/Contact/Contact';
+import Home from './pages/Home/Home';
 import DebtCalculator from './pages/Calculator/Calculator';
+import Footer from './pages/Footer/Footer';
 
 function App() {
   return (
-    <div className='container'>
+    <div>
       <Navbar /> 
-      <Hero />
-      <About />
-      <Solutions />
-      {/* <Contact /> */}
-      {/* <About /> */}
-      <DebtCalculator />
+      <Home />
+      {/* <DebtCalculator /> */}
+      <Footer />
     </div>
   );
 }

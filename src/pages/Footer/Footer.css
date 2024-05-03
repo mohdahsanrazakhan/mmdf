@@ -1,0 +1,87 @@
+.footer-bg {
+  background-color: rgba(20, 11, 11, 0.8);
+  margin: 2rem 0 0 0;
+  padding: 2rem 0;
+}
+
+.footer-portion {
+  display: flex;
+  color: aliceblue;
+  min-height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-header {
+  color: whitesmoke;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.footer-para {
+  width: 80%;
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+}
+
+.icons-container {
+  display: flex;
+  gap: 20px;
+}
+
+.icons-container svg {
+  height: 26px;
+  width: 26px;
+}
+
+.icons-container svg:hover {
+  color: gold
+}
+
+.footer-right {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-right .footer-card {
+  background-color: rgb(35, 35, 14);
+  width: fit-content;
+  padding: 3.5rem 1.5rem;
+  border-radius: 30px 0 30px 0;
+  box-shadow: 15px 15px rgb(78, 78, 78);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 16rem;
+}
+
+.footer-right .footer-card svg {
+  height: 32px;
+  width: 32px;
+  color: gold;
+}
+
+.footer-right .footer-card:hover .email {
+  color: gold;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-portion {
+    flex-direction: column;
+  }
+  .footer-right {
+    margin: 3rem 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer-right {
+    flex-direction: column;
+  }
+}
