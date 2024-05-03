@@ -11,7 +11,7 @@ function Hero() {
     className='hero-portion'>
       <div className="hero-title">
         <p><div id='dash'></div>make me debt free</p>
-        <h1>“debts solution”</h1>
+        <h1>“Debts Solution”</h1>
         <h2>best debt reliving</h2>
         <h2>solution and service</h2>
       </div>

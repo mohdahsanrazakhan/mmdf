@@ -61,6 +61,10 @@
   width: 16rem;
 }
 
+.footer-right .footer-card:hover {
+  box-shadow: 15px 15px rgb(140, 133, 85);
+}
+
 .footer-right .footer-card svg {
   height: 32px;
   width: 32px;

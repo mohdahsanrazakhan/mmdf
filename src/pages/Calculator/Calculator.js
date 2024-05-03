@@ -435,8 +435,6 @@ function DebtCalculator() {
             </div>
           </div>
 
-
-
           {/* Add similar input fields for other expense items */}
 
           <button className='calc-btn' onClick={calculateTotalExpenses}>Calculate Total Expenses</button>
@@ -445,7 +443,9 @@ function DebtCalculator() {
           <button className='calc-btn' onClick={calculateRemainingAmount}>Calculate disposal Amount</button>
           {remainingAmount !== null && <p className='total-result'>Remaining Amount: £{remainingAmount}</p>}
         </div>
-      </div></div>
+        
+      </div>
+    </div>
   );
 }
 

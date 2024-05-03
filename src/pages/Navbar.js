@@ -12,9 +12,10 @@ import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 // import ToggleColorMode from "./ToggleColorMode";
+import logo from '../assets/images/logo.png'
 
 const logoStyle = {
-  width: "140px",
+  width: "65px",
   height: "auto",
   cursor: "pointer",
 };
@@ -83,19 +84,20 @@ function Navbar({ mode, toggleColorMode }) {
                 px: 0,
               }}
             >
+              <div style={{ display: "flex", justifyContent: "center", alignItems: "center", margin: "auto 0"}}>
               <img
-                src={
-                  "https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e6faf73568658154dae_SitemarkDefault.svg"
-                }
+                src={logo}
                 style={logoStyle}
-                alt="logo of sitemark"
+                alt="logo of mmdf"
               />
+              <p style={{ fontSize: "1.5rem", marginTop: "15px", color: "#000", fontWeight: "600", fontFamily: "Roboto Slab" }}>MMDF</p>
+              </div>
               <Box sx={{ display: { xs: "none", md: "flex" }, ml: "auto" }}>
                 <MenuItem
                   onClick={() => scrollToSection("home")}
                   sx={{ py: "6px", px: "12px" }}
                 >
-                  <Typography variant="body2" color="f0f8ff">
+                  <Typography variant="body2" color="#000" fontSize="18px" >
                     Home
                   </Typography>
                 </MenuItem>
@@ -103,7 +105,7 @@ function Navbar({ mode, toggleColorMode }) {
                   onClick={() => scrollToSection("aboutus")}
                   sx={{ py: "6px", px: "12px" }}
                 >
-                  <Typography variant="body2" color="f0f8ff">
+                  <Typography variant="body2" color="#000" fontSize="18px" >
                     About Us
                   </Typography>
                 </MenuItem>
@@ -111,15 +113,15 @@ function Navbar({ mode, toggleColorMode }) {
                   onClick={() => scrollToSection("services")}
                   sx={{ py: "6px", px: "12px" }}
                 >
-                  <Typography variant="body2" color="f0f8ff">
-                    Services
+                  <Typography variant="body2" color="#000" fontSize="18px" >
+                    Solution
                   </Typography>
                 </MenuItem>
                   <MenuItem
                     onClick={() => scrollToSection("calculators")}
                     sx={{ py: "6px", px: "12px" }}
                   >
-                    <Typography variant="body2" color="f0f8ff">
+                    <Typography variant="body2" color="#000" fontSize="18px" >
                       Calculators
                     </Typography>
                   </MenuItem>
@@ -127,7 +129,7 @@ function Navbar({ mode, toggleColorMode }) {
                   onClick={() => scrollToSection("testimonials")}
                   sx={{ py: "6px", px: "12px" }}
                 >
-                  <Typography variant="body2" color="f0f8ff">
+                  <Typography variant="body2" color="#000" fontSize="18px" >
                     Testimonials
                   </Typography>
                 </MenuItem>
@@ -135,7 +137,7 @@ function Navbar({ mode, toggleColorMode }) {
                   onClick={() => scrollToSection("contactus")}
                   sx={{ py: "6px", px: "12px" }}
                 >
-                  <Typography variant="body2" color="f0f8ff">
+                  <Typography variant="body2" color="#000" fontSize="18px" >
                     Contact Us
                   </Typography>
                 </MenuItem>
@@ -157,7 +159,8 @@ function Navbar({ mode, toggleColorMode }) {
                   sx={{
                     minWidth: "60dvw",
                     p: 2,
-                    backgroundColor: "background.paper",
+                    backgroundColor: "rgba(128,128,128,0.8)",
+                    color: "#000",
                     flexGrow: 1,
                   }}
                 >
@@ -168,7 +171,7 @@ function Navbar({ mode, toggleColorMode }) {
                     About Us
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection("services")}>
-                    Services
+                    Solution
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection("calculators")}>
                     Calculators
