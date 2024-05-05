@@ -15,9 +15,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import logo from '../assets/images/logo.png'
 
 const logoStyle = {
-  width: "65px",
+  width: "55px",
   height: "auto",
   cursor: "pointer",
+  backgroundColor: "whitesmoke",
+  borderRadius: "100%"
 };
 
 function Navbar({ mode, toggleColorMode }) {
@@ -61,18 +63,9 @@ function Navbar({ mode, toggleColorMode }) {
               justifyContent: "space-between",
               flexShrink: 0,
               borderRadius: "999px",
-              bgcolor:
-                theme.palette.mode === "light"
-                  ? "rgba(255, 255, 255, 0.4)"
-                  : "rgba(0, 0, 0, 0.4)",
-              backdropFilter: "blur(24px)",
-              maxHeight: 40,
-              border: "1px solid",
-              borderColor: "divider",
-              boxShadow:
-                theme.palette.mode === "light"
-                  ? `0 0 1px rgba(85, 166, 246, 0.1), 1px 1.5px 2px -1px rgba(85, 166, 246, 0.15), 4px 4px 12px -2.5px rgba(85, 166, 246, 0.15)`
-                  : "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",
+              bgcolor: "rgba(15, 15, 15, 0.5)",
+              border: "1px solid rgba(218, 165, 32, 0.5)",
+              boxShadow: "0 0 10px rgba(218, 165, 32, 0.3)"
             })}
           >
             <Box
@@ -90,14 +83,13 @@ function Navbar({ mode, toggleColorMode }) {
                 style={logoStyle}
                 alt="logo of mmdf"
               />
-              <p style={{ fontSize: "1.5rem", marginTop: "15px", color: "#000", fontWeight: "600", fontFamily: "Roboto Slab" }}>MMDF</p>
               </div>
               <Box sx={{ display: { xs: "none", md: "flex" }, ml: "auto" }}>
                 <MenuItem
                   onClick={() => scrollToSection("home")}
                   sx={{ py: "6px", px: "12px" }}
                 >
-                  <Typography variant="body2" color="#000" fontSize="18px" >
+                  <Typography variant="body2" color="#daa520" fontSize="18px" >
                     Home
                   </Typography>
                 </MenuItem>
@@ -105,7 +97,7 @@ function Navbar({ mode, toggleColorMode }) {
                   onClick={() => scrollToSection("aboutus")}
                   sx={{ py: "6px", px: "12px" }}
                 >
-                  <Typography variant="body2" color="#000" fontSize="18px" >
+                  <Typography variant="body2" color="#daa520" fontSize="18px" >
                     About Us
                   </Typography>
                 </MenuItem>
@@ -113,7 +105,7 @@ function Navbar({ mode, toggleColorMode }) {
                   onClick={() => scrollToSection("services")}
                   sx={{ py: "6px", px: "12px" }}
                 >
-                  <Typography variant="body2" color="#000" fontSize="18px" >
+                  <Typography variant="body2" color="#daa520" fontSize="18px" >
                     Solution
                   </Typography>
                 </MenuItem>
@@ -121,7 +113,7 @@ function Navbar({ mode, toggleColorMode }) {
                     onClick={() => scrollToSection("calculators")}
                     sx={{ py: "6px", px: "12px" }}
                   >
-                    <Typography variant="body2" color="#000" fontSize="18px" >
+                    <Typography variant="body2" color="#daa520" fontSize="18px" >
                       Calculators
                     </Typography>
                   </MenuItem>
@@ -129,7 +121,7 @@ function Navbar({ mode, toggleColorMode }) {
                   onClick={() => scrollToSection("testimonials")}
                   sx={{ py: "6px", px: "12px" }}
                 >
-                  <Typography variant="body2" color="#000" fontSize="18px" >
+                  <Typography variant="body2" color="#daa520" fontSize="18px" >
                     Testimonials
                   </Typography>
                 </MenuItem>
@@ -137,7 +129,7 @@ function Navbar({ mode, toggleColorMode }) {
                   onClick={() => scrollToSection("contactus")}
                   sx={{ py: "6px", px: "12px" }}
                 >
-                  <Typography variant="body2" color="#000" fontSize="18px" >
+                  <Typography variant="body2" color="#daa520" fontSize="18px" >
                     Contact Us
                   </Typography>
                 </MenuItem>
@@ -160,7 +152,7 @@ function Navbar({ mode, toggleColorMode }) {
                     minWidth: "60dvw",
                     p: 2,
                     backgroundColor: "rgba(128,128,128,0.8)",
-                    color: "#000",
+                    color: "#daa520",
                     flexGrow: 1,
                   }}
                 >

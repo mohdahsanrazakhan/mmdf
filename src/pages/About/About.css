@@ -6,8 +6,8 @@
 }
 
 .About_portion {
-  background-color: rgba(128, 128, 128, 0.5);
-  border: 3px solid whitesmoke;
+  background-color: rgba(10, 10, 10, 0.5);
+  border: 3px solid goldenrod;
   border-radius: 10px;
   color: aliceblue;
   padding: 30px;
@@ -23,7 +23,7 @@
 }
 
 .about_subheading {
-  color: rgb(32, 218, 218);
+  color: goldenrod;
   font-family: "Roboto Slab", serif;
 }
 

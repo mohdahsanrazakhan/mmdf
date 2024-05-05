@@ -3,10 +3,13 @@
   gap: 50px;
   min-height: 100vh;
   margin: 3rem 0;
+  background-color: rgba(10, 10, 10, 0.5);
+  border-radius: 30px;
+  padding: 0 80px;
 }
 
 .contact-us div {
-  flex: 0 0 50%
+  flex: 1;
 }
 
 .form-container {

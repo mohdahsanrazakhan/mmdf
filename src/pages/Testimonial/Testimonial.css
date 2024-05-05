@@ -18,10 +18,12 @@
   width: calc(33.333% - 20px); /* Adjust card width for responsiveness */
   margin-bottom: 20px;
   border-radius: 10px;
-  background-color: rgba(128, 128, 128, 0.5);
-  border: 2px solid whitesmoke;
+  background-color: rgba(10, 10, 10, 0.5);
+  border: 2px solid goldenrod;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  padding: 7px 0 0 0;
+  text-align: justify;
 }
 
 .testimonial-info {
@@ -46,6 +48,7 @@
 
 .testimonial-card:hover {
   transform: scale(1.05); /* Slide in from the left on hover */
+  box-shadow: 0 0 12px rgba(218, 165, 32, 0.8);
 }
 
 @media (max-width: 768px) {
