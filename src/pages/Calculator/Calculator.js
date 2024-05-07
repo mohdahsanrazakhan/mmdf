@@ -20,7 +20,6 @@ function DebtCalculator() {
     waterRates: '',
     phoneInternet: '',
     tvLicence: '',
-    gasElectricHeating: '',
   });
   const [totalIncome, setTotalIncome] = useState(null);
   const [totalExpenses, setTotalExpenses] = useState(null);
@@ -71,7 +70,7 @@ function DebtCalculator() {
       <div className='debt-calc-container'>
         <div className='income-container'>
           <div className='style-title'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#daa520" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
               <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
             </svg>
             <h2 className='calc-title'>Income Details</h2>
@@ -134,7 +133,7 @@ function DebtCalculator() {
                 <input
                   type="text"
                   id="otherIncome"
-                  placeholder="please specify"
+                  placeholder="Please specify"
                   value={income.otherIncome}
                   onChange={(e) => handleIncomeChange('otherIncome', e.target.value)} />
               </div>
@@ -159,7 +158,7 @@ function DebtCalculator() {
 
         <div className='expense-container'>
           <div className='style-title'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#daa520" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
               <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
             </svg>
             <h2 className='calc-title'>Expenses Details</h2>
@@ -440,7 +439,7 @@ function DebtCalculator() {
           <button className='calc-btn' onClick={calculateTotalExpenses}>Calculate Total Expenses</button>
           {totalExpenses !== null && <p className='total-result'>Total Expenses: £{totalExpenses}</p>}
 
-          <button className='calc-btn' onClick={calculateRemainingAmount}>Calculate disposal Amount</button>
+          <button className='calc-btn' onClick={calculateRemainingAmount}>Calculate Disposal Amount</button>
           {remainingAmount !== null && <p className='total-result'>Remaining Amount: £{remainingAmount}</p>}
         </div>
         

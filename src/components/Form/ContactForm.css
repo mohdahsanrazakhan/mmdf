@@ -29,8 +29,17 @@
   margin: 8px 0 0 0;
 }
 
-.input-fields input, .input-fields textarea {
+.input-fields input, textarea {
   padding: 10px 8px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 3px 0 0 0;
+}
+
+.input-fields input:focus, textarea:focus {
+  background: rgba(255, 255, 255, 0.9);
+  outline-color: goldenrod;
 }
 
 .submit-btn {

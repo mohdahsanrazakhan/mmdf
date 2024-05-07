@@ -30,7 +30,7 @@ function GroupExample({imgUrl, title, desc, solution}) {
         `}
       </style>
       <Card className='customCard'>
-        <Card.Img variant="top" src={imgUrl} className='customImg' />
+        <Card.Img variant="top" src={imgUrl} className='customImg' loading='lazy' alt={title} />
         <Card.Body>
           <Card.Title className='customTitle'>{title}</Card.Title>
           <Card.Text>{desc}</Card.Text>

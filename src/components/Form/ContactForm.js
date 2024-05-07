@@ -30,19 +30,19 @@ function ContactForm() {
       <p>Go ahead and send us a brief of your requirements!</p>
       <form ref={form} onSubmit={sendEmail}>
         <div className='input-fields'>
-          <label>Full name</label>
+          <label for="user_name">Full name</label>
           <input type="text" name="user_name" placeholder='Type your name' required/>
         </div>
         <div className='input-fields'>
-          <label>Email</label>
+          <label for="user_email">Email</label>
           <input type="email" name="user_email" placeholder='Type your email' required />
         </div>
         <div className='input-fields'>
-          <label>Phone number</label>
+          <label for="user_number">Phone number</label>
           <input type="number" name="user_number" placeholder='+44 00000-00000' required />
         </div>
         <div className='input-fields'>
-          <label>Message</label>
+          <label for="message">Message</label>
           <textarea name="message" />
         </div>
         <input type="submit" value="Send" className='submit-btn' />

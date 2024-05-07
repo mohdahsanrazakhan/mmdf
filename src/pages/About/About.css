@@ -8,7 +8,7 @@
 .About_portion {
   background-color: rgba(10, 10, 10, 0.5);
   border: 3px solid goldenrod;
-  border-radius: 10px;
+  border-radius: 1rem;
   color: aliceblue;
   padding: 30px;
 }

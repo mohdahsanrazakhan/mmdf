@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 // import ToggleColorMode from "./ToggleColorMode";
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/logo.webp'
 
 const logoStyle = {
   width: "55px",
@@ -31,16 +31,17 @@ function Navbar({ mode, toggleColorMode }) {
 
   const scrollToSection = (sectionId) => {
     const sectionElement = document.getElementById(sectionId);
-    const offset = 128;
-    if (sectionElement) {
-      const targetScroll = sectionElement.offsetTop - offset;
-      sectionElement.scrollIntoView({ behavior: "smooth" });
-      window.scrollTo({
-        top: targetScroll,
-        behavior: "smooth",
-      });
-      setOpen(false);
-    }
+    sectionElement.scrollIntoView({ behavior: 'smooth' })
+    // const offset = 128;
+    // if (sectionElement) {
+    //   const targetScroll = sectionElement.offsetTop - offset;
+    //   sectionElement.scrollIntoView({ behavior: "smooth" });
+    //   window.scrollTo({
+    //     top: targetScroll,
+    //     behavior: "smooth",
+    //   });
+    //   setOpen(false);
+    // }
   };
 
   return (
@@ -102,21 +103,13 @@ function Navbar({ mode, toggleColorMode }) {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection("services")}
+                  onClick={() => scrollToSection("solution")}
                   sx={{ py: "6px", px: "12px" }}
                 >
                   <Typography variant="body2" color="#daa520" fontSize="18px" >
                     Solution
                   </Typography>
                 </MenuItem>
-                  <MenuItem
-                    onClick={() => scrollToSection("calculators")}
-                    sx={{ py: "6px", px: "12px" }}
-                  >
-                    <Typography variant="body2" color="#daa520" fontSize="18px" >
-                      Calculators
-                    </Typography>
-                  </MenuItem>
                 <MenuItem
                   onClick={() => scrollToSection("testimonials")}
                   sx={{ py: "6px", px: "12px" }}
@@ -133,6 +126,14 @@ function Navbar({ mode, toggleColorMode }) {
                     Contact Us
                   </Typography>
                 </MenuItem>
+                <MenuItem
+                  onClick={() => scrollToSection("calculators")}
+                  sx={{ py: "6px", px: "12px" }}
+                >
+                  <Typography variant="body2" color="#daa520" fontSize="18px" >
+                    Calculator
+                  </Typography>
+                </MenuItem>
               </Box>
             </Box>
             
@@ -143,6 +144,7 @@ function Navbar({ mode, toggleColorMode }) {
                 aria-label="menu"
                 onClick={toggleDrawer(true)}
                 sx={{ minWidth: "30px", p: "4px" }}
+                style={{ color: "#daa520" }}
               >
                 <MenuIcon />
               </Button>
@@ -151,7 +153,7 @@ function Navbar({ mode, toggleColorMode }) {
                   sx={{
                     minWidth: "60dvw",
                     p: 2,
-                    backgroundColor: "rgba(128,128,128,0.8)",
+                    backgroundColor: "rgba(0,0,0,0.8)",
                     color: "#daa520",
                     flexGrow: 1,
                   }}
@@ -162,17 +164,17 @@ function Navbar({ mode, toggleColorMode }) {
                   <MenuItem onClick={() => scrollToSection("aboutus")}>
                     About Us
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection("services")}>
+                  <MenuItem onClick={() => scrollToSection("solution")}>
                     Solution
-                  </MenuItem>
-                  <MenuItem onClick={() => scrollToSection("calculators")}>
-                    Calculators
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection("testimonials")}>
                     Testimonials
                   </MenuItem>
                   <MenuItem onClick={() => scrollToSection("contactus")}>
                     Contact Us
+                  </MenuItem>
+                  <MenuItem onClick={() => scrollToSection("calculators")}>
+                    Calculators
                   </MenuItem>
                   <Divider />
                 </Box>

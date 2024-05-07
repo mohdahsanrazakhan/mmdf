@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 function Contact() {
   return (
-    <div className='container contact-us'>
+    <div className='contact-us'>
       {/* Form Portion */}
       <motion.div 
       initial={{ opacity: 0, x: -50 }}

@@ -6,6 +6,7 @@
   background-color: rgba(10, 10, 10, 0.5);
   border-radius: 30px;
   padding: 0 80px;
+  overflow-x: hidden;
 }
 
 .contact-us div {
@@ -32,5 +33,15 @@
 @media only screen and (max-width: 768px) {
   .contact-us {
     flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-us {
+    border-radius: 0px;
+    padding: 0 0;
+  }
+  .contact-us div {
+    flex: auto;
   }
 }

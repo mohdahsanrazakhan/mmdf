@@ -7,12 +7,16 @@ import Footer from './pages/Footer/Footer';
 
 function App() {
   return (
-    <div>
-      <Navbar /> 
-      <Home />
-      {/* <DebtCalculator /> */}
-      <Footer />
-    </div>
+      <div>
+        <Navbar /> 
+        <div id="home">
+          <Home />
+        </div>
+        <div id="calculators">
+          <DebtCalculator />
+        </div>
+        <Footer />
+      </div>
   );
 }
 
