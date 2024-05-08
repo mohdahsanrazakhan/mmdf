@@ -12,14 +12,15 @@ import MenuItem from "@mui/material/MenuItem";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
 // import ToggleColorMode from "./ToggleColorMode";
-import logo from '../assets/images/logo.webp'
+import logo from '../assets/images/logo.png'
 
 const logoStyle = {
-  width: "55px",
+  width: "70px",
   height: "auto",
   cursor: "pointer",
   backgroundColor: "whitesmoke",
-  borderRadius: "100%"
+  borderRadius: "100%",
+  margin: "5px 0",
 };
 
 function Navbar({ mode, toggleColorMode }) {

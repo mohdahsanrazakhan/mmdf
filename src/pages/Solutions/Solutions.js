@@ -22,8 +22,8 @@ function Solutions() {
         <Card imgUrl={dro} title="Debt Relief Order (DRO)" desc="In DRO you don't need to pay anything and all of your debt will be legally written off." solution="Formal Solution" />
         <Card imgUrl={bankruptcy} title="Bankruptcy" desc="Bankruptcy debt solutions in the UK typically refer to legal processes that individuals or businesses may use when they are unable to repay their debts" solution="Formal Solution" />
         <Card imgUrl={dmp} title="Debt Management Plan (DMP)" desc="An informal agreement between you and your creditors for paying back your debts." solution="Informal Solution" />
-        <Card imgUrl={td} title="Trust Deed" desc="A trust deed is a legally binding agreement between you and the people you owe money to, to pay all or some of the money you owe." solution="Scotish  Solution" />
-        <Card imgUrl={sl} title="Secured Loans" desc="If you have got a mortgage then you can get a secured loan against your mortgage with lower APR rate." solution="Loan Solution" />
+        <Card imgUrl={td} title="Trust Deed" desc="A trust deed is a legally binding agreement between you and the people you owe money to, to pay all or some of the money you owe." solution="Scottish  Solution" />
+        <Card imgUrl={sl} title="Secured Loans" desc="If you have got a mortgage then you can get a secured loan against your mortgage with lower Annual Percentage Rate (APR)." solution="Loan Solution" />
       </motion.div>
     </>
   )
