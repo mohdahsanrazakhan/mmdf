@@ -15,12 +15,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import logo from '../assets/images/logo.png'
 
 const logoStyle = {
-  width: "70px",
+  width: "90px",
   height: "auto",
   cursor: "pointer",
-  backgroundColor: "whitesmoke",
-  borderRadius: "100%",
-  margin: "5px 0",
+  margin: "0 0 0 15px"
 };
 
 function Navbar({ mode, toggleColorMode }) {
