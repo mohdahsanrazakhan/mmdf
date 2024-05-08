@@ -71,6 +71,11 @@
   color: gold;
 }
 
+.footer-right .footer-card .email {
+  color: aliceblue;
+  text-decoration: none;
+}
+
 .footer-right .footer-card:hover .email {
   color: gold;
 }
