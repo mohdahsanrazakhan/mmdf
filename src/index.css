@@ -17,7 +17,7 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(https://i.pngimg.me/thumb/f/720/165d00ea22724d9b92bc.jpg);
+  background-image: url('../src/assets/images/bg.jpg');
   background-repeat: repeat;
   color: aliceblue;
 }
