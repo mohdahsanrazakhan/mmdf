@@ -48,12 +48,12 @@
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 5rem;
+  gap: 1rem 1rem;
 }
 
 .input-field-half {
   display: flex;
-  gap: 1rem 5rem;
+  gap: 1rem 1rem;
 }
 
 .input-field-half .input-field {
@@ -81,6 +81,12 @@
   font-size: 1.5rem;
   margin: 0.5rem 0;
   text-align: center;
+}
+
+@media only screen and (max-width: 1439px) {
+  .input-field-half {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
