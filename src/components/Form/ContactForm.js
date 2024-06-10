@@ -49,7 +49,7 @@ function ContactForm() {
         </div>
         <ReCAPTCHA
             className="reCaptcha-style mt-3"
-            sitekey="6LdIm9opAAAAAHbXiTkMjXyHlQoBMde2J8MzLFw4"
+            sitekey="6LduRfUpAAAAABpNzAvA-m3LI814pz11ZD48yIws"
             onChange={(val) => setCaptchaVal(val)}
           />
         <button type="submit" value="Send" className='submit-btn' disabled={!captchaVal} >Send</button>
